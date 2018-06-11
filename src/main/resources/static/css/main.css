@@ -9,3 +9,24 @@ body {
 .output, .form-group, .intro, .mt-5 {
 	color: white;
 }
+fieldset {
+    margin: 8px;
+    border: 1px solid silver;
+    padding: 8px;    
+    border-radius: 4px;
+}
+
+legend {
+    padding: 2px;    
+}
+
+table, th, td {
+    border: 1px solid black;
+    color: white;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+    border-spacing: 5px;
+    align: center;
+    
+}

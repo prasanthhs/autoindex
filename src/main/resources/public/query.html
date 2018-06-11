@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" href="/webjars/bootstrap/4.0.0-beta/css/bootstrap.css">
+<title>AutoIndex</title>
+</head>
+<body>
+	<div id = "window">
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+		<div class="container">
+			<a class="navbar-brand" href="home.html">About us</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Index
+							Data</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Page Content -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1 class="mt-5">Search</h1>
+					<p class="intro">Query on indexed classes, property, entity or all</p>
+										
+					<div class="form-group" id="Label">
+					<label class="intro">Lookup</label>&nbsp;
+						  <div class="btn-group" data-toggle="buttons">
+							  <label class="btn btn-primary active">
+							    <input type="radio" name="options" id="option1" value="label" checked> Label
+							  </label>
+							  <label class="btn btn-primary">
+							    <input type="radio" name="options" id="option2" value="uri"> URI
+							  </label>
+							  
+						</div>
+						<br> <br> 
+						<input type="text" class="form-control" id="queryText"
+							aria-describedby="emailHelp" placeholder="Enter Query Label"
+							required="required" name="labelQuery" /> 
+						
+							<br>
+		  					 <label for="sel1">Search under</label>
+							  <select class="form-control" id="sel1">
+							    <option value="Entity">Entity</option>
+							    <option value="property">Property</option>
+							    <option value="class">Class</option>
+							    <option value="all" selected>All</option>
+							  </select>
+							 
+							  
+						<br>
+						<button id="searchButtonLabel" type="submit"
+						class="btn btn-success">Search</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="results">
+		
+	</div>
+</div>
+<script src="/webjars/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="/webjars/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<script src="js/query.js"></script>
+</body>
+
+</html>
